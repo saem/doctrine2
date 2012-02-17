@@ -1867,6 +1867,7 @@ class UnitOfWork implements PropertyChangedListener
         $this->collectionDeletions =
         $this->collectionUpdates =
         $this->extraUpdates =
+        $this->readOnlyObjects =
         $this->orphanRemovals = array();
         if ($this->commitOrderCalculator !== null) {
             $this->commitOrderCalculator->clear();
